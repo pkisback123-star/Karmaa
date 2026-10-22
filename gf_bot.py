@@ -3,7 +3,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import random
 import os
 
-TOKEN = os.getenv("8964252532:AAGi-WnLm-xepK_6xa9evexbKKKdPZIFa_k")
+TOKEN = os.getenv("BOT_TOKEN")
 
 replies = [
     "Awww baby 🥺 itna cute message ❤️",
@@ -30,7 +30,7 @@ async def flirt_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     app = Application.builder().token(TOKEN).build()
-    app.add_handler(MessageHandler(filters.TEXT & (\~filters.COMMAND), flirt_reply))
+    app.add_handler(MessageHandler(filters.TEXT, flirt_reply))
     print("Girlfriend bot 24/7 start ho gaya ❤️")
     app.run_polling()
 
