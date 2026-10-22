@@ -5,7 +5,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
 import yt_dlp
 
-TOKEN = "8972022752:AAEvFjxYp_0TYRuWtOctA5i70oIzWcgjVQ"
+TOKEN = "8972022752:AAHPkI7_wqeFhGtMsWnNxrUte5bs3EnDr8Y"
 
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
