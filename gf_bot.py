@@ -3,7 +3,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import random
 import os
 
-TOKEN = os.getenv("8964252532:AAGi-WnLm-xepK_6xa9evexbKKKdPZIFa_k")  # Render pe environment variable se lega
+TOKEN = os.getenv("8964252532:AAGi-WnLm-xepK_6xa9evexbKKKdPZIFa_k")
 
 replies = [
     "Awww baby 🥺 itna cute message ❤️",
@@ -24,7 +24,7 @@ replies = [
 
 async def flirt_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message and update.message.text:
-        if random.random() < 0.45:  # 45% chance reply kare
+        if random.random() < 0.45:
             reply = random.choice(replies)
             await update.message.reply_text(reply)
 
