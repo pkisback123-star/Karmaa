@@ -1,0 +1,5 @@
+python-telegram-bot
+flask
+yt-dlp
+requests
+PyNaCl
