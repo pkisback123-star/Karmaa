@@ -30,7 +30,7 @@ async def flirt_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     app = Application.builder().token(TOKEN).build()
-    app.add_handler(MessageHandler(filters.TEXT & \~filters.COMMAND, flirt_reply))
+    app.add_handler(MessageHandler(filters.TEXT & (\~filters.COMMAND), flirt_reply))
     print("Girlfriend bot 24/7 start ho gaya ❤️")
     app.run_polling()
 
