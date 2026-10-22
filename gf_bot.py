@@ -4,7 +4,7 @@ import os
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, ContextTypes
 
-TOKEN = os.getenv("8964252532:AAGi-WnLm-xepK_6xa9evexbKKKdPZIFa_k")
+TOKEN = 8964252532:AAGi-WnLm-xepK_6xa9evexbKKKdPZIFa_k
 
 replies = [
     "Awww baby 🥺 itna cute message ❤️",
